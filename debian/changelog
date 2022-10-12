@@ -1,0 +1,75 @@
+libtoml-parser-perl (0.91-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.91.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 11 Nov 2017 22:27:45 +0100
+
+libtoml-parser-perl (0.90-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Drop debian/tests/pkg-perl/smoke-tests, handled by pkg-perl-
+    autopkgtest now.
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.90
+  * Declare compliance with Debian Policy 4.1.1
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Fri, 27 Oct 2017 13:31:42 -0200
+
+libtoml-parser-perl (0.10-1) unstable; urgency=medium
+
+  * Import upstream version 0.10
+  * Bump debhelper compatibility level to 10
+  * debian/control: update uploader's email address
+  * Remove the Perl version constraint for build
+  * Declare compliance with Debian Policy 4.0.0
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Wed, 21 Jun 2017 17:41:45 -0300
+
+libtoml-parser-perl (0.08-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: use HTTPS for GitHub URLs.
+
+  [ Nick Morrott ]
+  * New upstream version 0.08
+  * Refresh build-dependencies
+  * Refresh d/u/metadata
+
+  [ gregor herrmann ]
+  * autopkgtest: enable more smoke tests.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 25 Nov 2016 17:06:01 +0100
+
+libtoml-parser-perl (0.07-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.07
+  * Update years of Debian packaging copyright
+  * Declare compliance with Debian policy 3.9.8
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Sun, 10 Apr 2016 17:24:34 -0300
+
+libtoml-parser-perl (0.06-1) unstable; urgency=medium
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.06
+    Add support for TOML 0.4.0 (Closes: #806919)
+
+  [ gregor herrmann ]
+  * Build depend on perl 5.17.3 to ensure we have Storable 2.38.
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Wed, 02 Dec 2015 22:09:32 -0200
+
+libtoml-parser-perl (0.05-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #796038)
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Tue, 18 Aug 2015 14:28:31 -0300

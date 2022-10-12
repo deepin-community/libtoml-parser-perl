@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+PACKAGE = $(firstword $(shell dh_listpackages))
+TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	dh_auto_install
+	rm --verbose $(TMP)/usr/share/man/man3/TOML::Parser::Tokenizer.3pm
+	rm --verbose $(TMP)/usr/share/man/man3/TOML::Parser::Tokenizer::Strict.3pm
+	rm --verbose $(TMP)/usr/share/man/man3/TOML::Parser::Util.3pm

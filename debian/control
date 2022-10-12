@@ -1,0 +1,27 @@
+Source: libtoml-parser-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Lucas Kanashiro <kanashiro@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               libmodule-build-tiny-perl
+Build-Depends-Indep: libtest-deep-perl,
+                     libtest-deep-fuzzy-perl,
+                     libtypes-serialiser-perl,
+                     perl
+Standards-Version: 4.1.1
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libtoml-parser-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libtoml-parser-perl.git
+Homepage: https://metacpan.org/release/TOML-Parser
+
+Package: libtoml-parser-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libtypes-serialiser-perl
+Description: simple toml parser
+ TOML::Parser is a simple toml parser.
+ .
+ This data structure complies with the tests provided at
+ https://github.com/mojombo/toml/tree/master/tests.
